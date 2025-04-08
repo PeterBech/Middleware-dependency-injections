@@ -1,0 +1,18 @@
+﻿@page "/logviewer"
+
+<h3>Log Viewer</h3>
+
+<p>Denne side viser log-information fra vores middleware.</p>
+
+<button class="btn btn-primary" @onclick="GenerateLogEntry">Generer log-indgang</button>
+
+@code {
+    private void GenerateLogEntry()
+    {
+        // Dette vil udløse et HTTP-request, som vores middleware vil logge
+        NavigationManager.NavigateTo("/logviewer", forceLoad: true);
+    }
+
+    [Inject]
+    private NavigationManager NavigationManager { get; set; }
+}
