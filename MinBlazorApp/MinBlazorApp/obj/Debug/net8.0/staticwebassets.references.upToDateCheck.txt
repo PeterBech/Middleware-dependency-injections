@@ -1,1 +1,0 @@
-C:\Users\pibm9\Documents\Datamatiker\Programmering\3. semester\MinBlazorApp\MinBlazorApp.Client\obj\Debug\net8.0\staticwebassets.build.json
